@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" type="image/x-icon" href="assets/logo.png">
+<title>Hoppy Bunnies</title>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/style.css">
+	    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <!-- <div class ="navbar">
+            <div class="container">
+                <div class="navbar-logodiv">
+                    <img src="assets/logo 2.png" alt="Hoppy Bunnies" class="logo">
+                </div>
+                <div class="navbar-links">
+                    <ul class="navbar-ul">
+                        <li><a href="#Home">HOME</a></li>
+                        <li><a href="#Products">PRODUCTS</a></li>
+                        <li><a href="#lower3">GALLERY</a></li>
+                        <li><a href="#lower4">ABOUT US</a></li>
+                        <li><a href="#lower5">CONTACT US</a></li>
+                    </ul> 
+              </div>
+            </div>
+        </div> -->
+
+        <div class="websitebody">
+            <div class="banner slides" id="Home">
+                <!-- <h1>A PLACE TO CALL HOME FOR YOU, AND YOUR RABBITS</h1> -->
+                <div class="banner-flex">
+                    <div class="banner-logo">
+                    </div>
+                    <div class="banner-verti-text">
+                        <h1>A PLACE TO CALL HOME FOR YOUR RABBITS</h1>
+                    </div>
+                    <div class="banner-verti-button">
+                        <button id="LearnMore" onclick="scrollToElement('.websitebody','.infoblocktest')">LEARN MORE</button>
+                        <script>
+                            function scrollToElement($cont,$snap) {
+                                // window.scrollTo({
+                                //     top: $int,
+                                //     behavior: 'smooth'
+                                // });
+                                const container = document.querySelector($cont);
+                                const snapPoint = document.querySelector($snap);
+                                const y = snapPoint.offsetTop - container.offsetTop;
+                                container.scroll({ top: y, behavior: 'smooth' });
+                            }
+                        </script>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <div class="infoblocktest slides" id="">
+                <div class="innerinfotest">
+                    <div class="div4verti1">
+                        <div class="titletest">
+                            <h1>OUR PRODUCTS</h1>
+                        </div>
+                    </div>
+                    <div class="div4verti2">
+                        <a href="">
+                            <div class="ingridtest blogimg">
+                                <div class="prodrabbits prodgrid"></div>
+                                <br>
+                                <h1>
+                                    <br>
+                                    <hr class="rounded">
+                                    <br>
+                                    WE’RE CURRENTY
+                                    SELLING HAPPY
+                                    AND HEALHTY
+                                    RABBITS THAT
+                                    ARE EXCITED
+                                    TO SEE THEIR
+                                    NEW HOMES!
+                                </h1>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="ingridtest blogimg">
+                                <div class="prodhouse prodgrid"></div>
+                                <br>
+                                <h1>
+                                    <br>
+                                    <hr class="rounded">
+                                    <br>
+                                    REASONABLY
+                                    SIZED CAGES THAT
+                                    WILL MAKE YOUR
+                                    RABBITS FEEL
+                                    COZY AND 
+                                    PROTECTED
+                                    AT ALL TIMES!
+                                </h1>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="ingridtest blogimg">
+                                <div class="prodfood prodgrid"></div>
+                                <br>
+                                <h1>
+                                    <br>
+                                    <hr class="rounded">
+                                    <br>
+                                    AFFORDABLE YET
+                                    TASTY PET FOOD
+                                    THAT YOU CAN
+                                    FEED YOUR 
+                                    RABBITS AND
+                                    SURELY MAKE 
+                                    THEM HAPPY!
+                                </h1>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="ingridtest blogimg">
+                                <div class="prodaccessories prodgrid"></div>
+                                <br>
+                                <h1>
+                                    <br>
+                                    <hr class="rounded">
+                                    <br>
+                                    MULTIPLE
+                                    ACCESSORIES THAT
+                                    WILL HELP IN 
+                                    MANAGING YOUR
+                                    LOVELY AND 
+                                    ENERGETIC
+                                    RABBITS!
+                                </h1>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+<!-- 
+        <div class="footer">
+            <div class="container">
+                <div class="footer-logo">
+                    <img class="img-footer" src="/assets/logo.png">
+                </div>
+                <div class="footer-quote">
+                    <h3>A place to call home for your rabbits</h3>
+                </div>
+                
+            </div>
+        </div> -->
+    </body>
+</html>

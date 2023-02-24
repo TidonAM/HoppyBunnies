@@ -1,0 +1,561 @@
+/* MAIN START */
+:root {
+	--color1: #AB8B7A;
+	--color2: #F4EBDC;
+	--color3: #231F20;
+	--color4: #7896aa;
+	--color5: #D7C6B4;
+}
+
+/* var(--color1) */
+
+a {
+	color: inherit;
+	text-decoration: none;
+	-webkit-user-drag: none;
+}
+
+html {
+    scroll-behavior: smooth !important;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 2550px;
+	width: 100%;
+    overflow-x: hidden;
+	background-color: #F4EBDC;
+	overflow-y: hidden;
+}
+.websitebody::-webkit-scrollbar {
+	width: 5px;               
+}
+
+.websitebody::-webkit-scrollbar-track {
+	background: var(--color1);
+}
+
+.websitebody::-webkit-scrollbar-thumb {
+	border-radius: 30px;
+	border: 3px solid #231F20;
+}
+/* MAIN END */
+
+#food-items {
+	scroll-margin-top: 200px;
+}
+
+#Products {
+	scroll-margin-top: 150px;
+}
+
+
+/* NAVIGATION BAR START */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+.navbar{
+    width: 100%;
+    overflow: hidden;
+    height: 100px;
+    line-height: 100px;
+    background: var(--color1);
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    filter: drop-shadow(0px 1px 2px);
+}
+.logo{
+    margin-top: 8px;
+    width: 200px;
+    float: left;
+}
+.navbar-ul {
+    float:right;
+    list-style-type: none;
+    margin: 0;
+    padding-top: 15px;
+    overflow: hidden;
+    padding-right: 20px;
+}
+.navbar-ul li{
+    float: left;
+    line-height: 70px;
+    text-align: center;
+    list-style: none;
+}
+.navbar-ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Inter';
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 14px 16px 20px;
+}
+.navbar-ul li a:hover{
+    color: black;
+	cursor: pointer;
+}
+/* NAVIGATION BAR END */
+
+
+
+/* BANNER START */
+.banner{
+	width: 100%;
+	/* height: 800px; */
+	background-image: url('/assets/bannersecond.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 40% center;
+	filter: drop-shadow(0px 1px 2px);
+
+	height: 100vh;
+}
+.banner h1{
+	font-size: 4vh;
+	font-family: 'Nunito';
+	color: white;
+	font-weight: 1;
+	text-shadow: 0 0 5px #000000, 0 0 5px #000000;
+}
+
+.banner-flex {
+	/* height: 800px; */
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 10px;
+
+	height: 100vh;
+}
+
+.contact-icon {
+	align-self: center;
+}
+
+.banner-verti-text{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+.banner-verti-button{
+	display: flex;
+	justify-content: center;
+}
+
+.banner button{
+	border: none;
+	color: black;
+	background-color: var(--color1);
+	border-radius: 1vh;
+	font-size: 2vh;
+	font-family: Inter;
+	top: 57%;
+	left: 47%;
+	padding: 1.5vh 1.5vh;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	filter: drop-shadow(0px .1vh .2vh);
+}
+#LearnMore{
+	-moz-transition: all 1s ease-in;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 1s ease-in;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+#LearnMore:hover{
+	cursor: pointer;
+    transform: scale(1.1);
+}
+/* BANNER END */
+
+/* INFORMATION BELT START */
+.textblock{
+	width: 500px;
+	height: 70px;
+	background-color: var(--color1);
+	border: 6px solid var(--color2);
+	position: absolute;
+	top: -35px;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 10px;
+	z-index: 1;
+}
+.textblock h1{
+	font-family: 'Inter';
+	text-align: center;
+	color: var(--color2);
+	font-size: 40px;
+	top: 10%;
+	position: relative;
+}
+.infoblock{
+	width: 100%;
+	height: 660px;
+	background-color: var(--color1);
+	margin-top: 0px;
+	filter: drop-shadow(0px 0px 0px);
+}
+
+
+
+.info-items{
+	display: flex;
+	grid-template-columns: repeat(4, 400px);
+	margin-top: 10vh;
+	width: 100%;
+	justify-content: center;
+	height: 80vh;
+	margin-bottom: 10vh;
+}
+
+.info-cont{
+	padding: 30px 0px 30px 0px;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	text-align: center;
+}
+
+.blogimg {
+	transition: transform .5s ease;
+}
+
+.blogimg:hover {
+	transform: scale(1.05);
+}
+
+.blogimg {
+	padding: 10px;
+}
+.prodinfo {
+	width: 300px;
+	padding: 20px 0px 40px 0px;
+	background-color: var(--color5);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 5.5vh;
+	border-radius: 5vh;
+	border: 6px solid var(--color2);
+}
+
+.prodrabbits{
+	background-image: url('/assets/rabbit.png');
+}
+.prodfood{
+	background-image: url('/assets/food.png');
+}
+.prodhouse{
+	background-image: url('/assets/house.png');
+}
+.prodaccessories{
+	background-image: url('/assets/accessories.png');
+}
+
+hr.rounded {
+	border-top: .8vh solid var(--color3);
+	border-radius: .5vh;
+	top: 50%;
+}
+
+.prodinfo h1{
+	font-family: 'Itim';
+	font-size: 25px;
+	width: 200px;
+}
+
+.infoblocktest {
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	background-color: var(--color2);
+	align-items: center;
+	justify-content: center;
+	padding: 10vh 0vh 10vh 0vh;
+}
+
+.innerinfotest {
+	width: 100%;
+	height: 80vh;
+	background-color: var(--color1);
+	display: flex;
+	/* flex-direction: column; */
+	justify-content: center;
+	position: relative;
+	text-align: center;
+	padding: 7vh 0vh 5vh 0vh;
+}
+
+.div4verti1 {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	top: -4vh;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 10px;
+	z-index: 1;
+}
+
+.div4verti2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1vw;
+}
+
+.banner-logo {
+	height: 20vh;
+	background-image: url('/assets/logo 2.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	/* width: 35vw; */
+	width: 100%;
+	position: absolute;
+	top: 1vh;
+	background-position: center;
+	/* background-color: var(--color1); */
+}
+
+.banner-logo::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.5); /* replace with your desired color and opacity */
+	z-index: -1; /* position behind the background image */
+  }
+
+.titletest {
+	display: flex;
+	color: var(--color2);
+	width: 50vh;
+	height: 7vh;
+	justify-content: center;
+	align-items: center;
+	border: .7vh solid var(--color2);
+	border-radius: 1vh;
+	background-color: var(--color1);
+}
+
+.titletest h1 {
+	font-family: 'Inter';
+	font-size: 4vh;
+}
+
+.ingridtest {
+	width: 20vw;
+	padding: 20px 0px 40px 0px;
+	background-color: var(--color5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	/* margin-top: 5.5vh; */
+	border-radius: 5vh;
+	border: .7vh solid var(--color2);
+	gap: 0vh;
+}
+
+.ingridtest h1{
+	font-family: 'Itim';
+	font-size: 2.5vh;
+	width: 20vh;
+}
+
+.prodgrid {
+	margin-top: 2vh;
+	height: 15vh;
+	width: 15vh;
+	background-color: var(--color5);
+	background-size: cover;
+}
+
+@media only screen and (max-width: 1190px) {
+	.ingridtest {
+		width: 80vw; 
+	}
+
+	.ingridtest h1 {
+		width: 60vw;
+		font-size: 4vh;
+	}
+
+	.innerinfotest {
+		justify-content: center;
+		padding: 7vh 0vh 5vh 0vh;
+		height: auto;
+	}
+	.div4verti2 {
+		flex-direction: column;
+		align-items: center;
+		gap: 5vh;
+		width: 100%;
+	}
+	.infoblocktest {
+		height: auto;
+	}
+}
+.websitebody {
+	display: flex;
+	flex-direction: column;
+}
+/* INFORMATION BELT END */
+
+/* FOOD BELT START */
+.FoodBanner{
+	width: 100%;
+	height: 800px;
+	position: relative;
+	margin-top: 50px;
+	background-image: url('/assets/rabbitseating.png');
+	background-repeat: none;
+	background-size: cover;
+	filter: drop-shadow(0px 1px 2px);
+	display: flex;
+	justify-content: center;
+}
+.FoodBanner h1{
+	font-size: 4vh;
+	position: relative;
+	/* top: 47%;
+	left: 34%; */
+	font-family: 'Nunito';
+	text-align: center;
+	color: white;
+	font-weight: 1;
+	text-shadow: 0 0 5px #000000, 0 0 5px #000000;
+}
+.FoodBannerVerti{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.FoodText1{
+	width: 550px;
+	height: 70px;
+	background-color: var(--color1);
+	position: relative;
+	justify-content: center;
+	border: 2px solid black;
+	text-align: center;
+	border-radius: 10px;
+	top: 35px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 2;
+}
+.FoodText1 h1{
+	position: relative;
+	top: 20%;
+	font-family: 'Inter';
+}
+.FoodContainer{
+	position: relative;
+	width: 100%;
+	height: 800px;
+	background-color: var(--color1);
+}
+/* FOOD BELT END */
+
+
+
+/* CONTACT START */
+.row-contact {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	z-index: 5;
+}
+
+.websitebody {
+	width: 100%;
+	height: 100vh;
+	overflow-y: scroll;
+	scroll-snap-type: y mandatory;
+}
+
+.slides {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	scroll-snap-align: start;
+}
+
+.row-contact p {
+	font-family: 'Itim';
+}
+
+.row-contact a {
+	font-family: 'Itim';
+}
+.contact-container{
+	padding: 30px 30px 0px 30px;
+    max-width: 100%;
+    box-sizing: border-box;
+    grid-template-columns: repeat(2, calc(50% - 10px));
+    display: grid;
+    grid-gap: 20px 80px;
+}
+
+.contact-info{
+    margin-bottom: 3rem;
+    width: 50%;
+    display: flex;
+}
+.contact-text{
+	white-space: nowrap;
+	font-family: Inter;
+}
+.contact-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 10px;
+}
+
+/* CONTACT END */
+
+
+/* FOOTER START */
+.footer{
+    width: 100%;
+    overflow: hidden;
+    height: fit-content;
+	padding: 20px;
+    background: var(--color1);
+    z-index: 3;
+    filter: drop-shadow(0px -1px 2px);
+}
+.footer-logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.img-footer{
+	max-height: 200px;
+}
+.footer-quote{
+    font-family: Inter;
+    justify-content: center;
+    color: white;
+	display: flex;
+	max-height: 20px;
+}
+/* FOOTER END */
+
