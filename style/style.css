@@ -544,6 +544,11 @@ hr.rounded {
 	.innerinfotest {
 		justify-content: center;
 		padding: 7vh 0vh 5vh 0vh;
+	}
+
+	#productblock > .innerinfotest {
+		justify-content: center;
+		padding: 7vh 0vh 5vh 0vh;
 		height: auto;
 	}
 	.div4verti2 {
