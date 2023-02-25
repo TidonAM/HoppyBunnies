@@ -11,9 +11,10 @@
 	    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/33f8248b0d.js" crossorigin="anonymous"></script>
+                
     </head>
     <body>
-        
         <!-- <div class ="navbar">
             <div class="container">
                 <div class="navbar-logodiv">
@@ -32,36 +33,31 @@
         </div> -->
 
         <div class="websitebody">
+
+            <div class="backToTop" onclick="scrollToElement('#productblock')">
+                <p>Back To Products</p>
+                <i class="fa-solid fa-angles-up"></i>
+            </div>
+
             <div class="banner slides" id="Home">
                 <!-- <h1>A PLACE TO CALL HOME FOR YOU, AND YOUR RABBITS</h1> -->
                 <div class="banner-flex">
                     <div class="banner-logo">
                         <div class="banner-logo-img"></div>
+                        <p>Hoppy Bunnies</p>
                     </div>
                     <div class="banner-verti-text">
                         <h1>A PLACE TO CALL HOME FOR YOUR RABBITS</h1>
                     </div>
                     <div class="banner-verti-button">
-                        <button id="LearnMore" onclick="scrollToElement('.websitebody','.infoblocktest')">SEE OUR PRODUCTS</button>
-                        <script>
-                            function scrollToElement($cont,$snap) {
-                                // window.scrollTo({
-                                //     top: $int,
-                                //     behavior: 'smooth'
-                                // });
-                                const container = document.querySelector($cont);
-                                const snapPoint = document.querySelector($snap);
-                                const y = snapPoint.offsetTop - container.offsetTop;
-                                container.scroll({ top: y, behavior: 'smooth' });
-                            }
-                        </script>
+                        <button id="LearnMore" onclick="scrollToElement('#productblock')">SEE OUR SERVICES</button>
                     </div>
                     
                 </div>
                 
             </div>
 
-            <div class="infoblocktest slides" id="">
+            <div class="infoblocktest slides" id="productblock">
                 <div class="innerinfotest">
                     <div class="div4verti1">
                         <div class="titletest">
@@ -69,15 +65,15 @@
                         </div>
                     </div>
                     <div class="div4verti2">
-                        <a href="">
+                        <a onclick="scrollToElement('#rabbitblock')">
                             <div class="ingridtest blogimg">
                                 <div class="prodrabbits prodgrid"></div>
                                 <br>
-                                <h1>
+                                <h1 class="desktopinfo">
                                     <br>
                                     <hr class="rounded">
                                     <br>
-                                    WE’RE CURRENTY
+                                    WE’RE CURRENTLY
                                     SELLING HAPPY
                                     AND HEALHTY
                                     RABBITS THAT
@@ -85,13 +81,19 @@
                                     TO SEE THEIR
                                     NEW HOMES!
                                 </h1>
+                                <h1 class="mobileinfo">
+                                    <br>
+                                    <hr class="rounded">
+                                    <br>
+                                    RABBITS
+                                </h1>
                             </div>
                         </a>
-                        <a href="">
+                        <a onclick="scrollToElement('#cageblock')">
                             <div class="ingridtest blogimg">
                                 <div class="prodhouse prodgrid"></div>
                                 <br>
-                                <h1>
+                                <h1 class="desktopinfo">
                                     <br>
                                     <hr class="rounded">
                                     <br>
@@ -103,13 +105,19 @@
                                     PROTECTED
                                     AT ALL TIMES!
                                 </h1>
+                                <h1 class="mobileinfo">
+                                    <br>
+                                    <hr class="rounded">
+                                    <br>
+                                    CAGES
+                                </h1>
                             </div>
                         </a>
-                        <a href="">
+                        <a onclick="scrollToElement('#foodblock')">
                             <div class="ingridtest blogimg">
                                 <div class="prodfood prodgrid"></div>
                                 <br>
-                                <h1>
+                                <h1 class="desktopinfo">
                                     <br>
                                     <hr class="rounded">
                                     <br>
@@ -121,13 +129,19 @@
                                     SURELY MAKE 
                                     THEM HAPPY!
                                 </h1>
+                                <h1 class="mobileinfo">
+                                    <br>
+                                    <hr class="rounded">
+                                    <br>
+                                    FOOD
+                                </h1>
                             </div>
                         </a>
-                        <a href="">
+                        <a onclick="scrollToElement('#accblock')">
                             <div class="ingridtest blogimg">
                                 <div class="prodaccessories prodgrid"></div>
                                 <br>
-                                <h1>
+                                <h1 class="desktopinfo">
                                     <br>
                                     <hr class="rounded">
                                     <br>
@@ -139,14 +153,69 @@
                                     ENERGETIC
                                     RABBITS!
                                 </h1>
+                                <h1 class="mobileinfo">
+                                    <br>
+                                    <hr class="rounded">
+                                    <br>
+                                    ACCESSORIES
+                                </h1>
                             </div>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="">
+            <div class="infoblocktest slides" id="rabbitblock">
+                <div class="innerinfotest">
+                    <div class="div4verti1">
+                        <div class="titletest">
+                            <h1>OUR RABBITS</h1>
+                        </div>
+                    </div>
+                    <div class="div4verti2 vh100">
 
+                    </div>
+                </div>
+            </div>
+
+            <div class="infoblocktest slides" id="cageblock">
+                <div class="innerinfotest">
+                    <div class="div4verti1">
+                        <div class="titletest">
+                            <h1>OUR CAGES</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="infoblocktest slides" id="foodblock">
+                <div class="innerinfotest">
+                    <div class="div4verti1">
+                        <div class="titletest">
+                            <h1>OUR FOOD PRODUCTS</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="infoblocktest slides" id="accblock">
+                <div class="innerinfotest">
+                    <div class="div4verti1">
+                        <div class="titletest">
+                            <h1>OUR ACCESSORIES</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="infoblocktest slides" id="contactblock">
+                <div class="innerinfotest">
+                    <div class="div4verti1">
+                        <div class="titletest">
+                            <h1>CONTACT US</h1>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -162,5 +231,147 @@
                 
             </div>
         </div> -->
+
+        <script>
+            
+            function scrollToElement($snap) {
+                // window.scrollTo({
+                //     top: $int,
+                //     behavior: 'smooth'
+                // });
+                const container = document.querySelector('.websitebody');
+                const snapPoint = document.querySelector($snap);
+                const y = snapPoint.offsetTop - container.offsetTop;
+                container.scroll({ top: y, behavior: 'smooth' });
+            }
+
+            const websitebody = document.querySelector('.websitebody');
+            // websitebody.addEventListener('scroll', function() {
+            //     var element = document.querySelector('.backToTop');
+            //     var position = element.getBoundingClientRect();
+
+            //     // checking whether fully visible
+            //     if(position.top < window.innerHeight && position.bottom >= 0) {
+            //         setTimeout(function() {
+            //             element.classList.add('visible');
+            //         },500);
+            //     } else {
+            //         element.classList.remove('visible');
+            //     }
+            // });
+
+            
+            websitebody.addEventListener('scroll', function() {
+                var productblock = document.querySelector('#productblock');
+                var element = document.querySelector('.backToTop');
+                var position = productblock.getBoundingClientRect();
+                if (position.bottom <= 0) {
+                    // setTimeout(function() {
+                        element.classList.add('visible');
+                    // },500);
+                } else {
+                    element.classList.remove('visible');
+                }
+            });
+
+            function debounce(func, delay) {
+                clearTimeout(timeoutId);
+                timeoutId = setTimeout(func, delay);
+            }
+
+            // let prevScrollPos = websitebody.scrollTop;
+            // let timeoutId;
+
+            // websitebody.addEventListener('scroll', () => {
+            //     var slides = document.querySelectorAll('.slides')
+            //     const currentScrollPos = websitebody.scrollTop;
+
+            //     clearTimeout(timeoutId);
+            //     debounce( function() {
+            //         if (currentScrollPos < prevScrollPos) {
+            //             for (let i = 0; i < slides.length; i++) {
+            //             slides[i].style.scrollSnapAlign = 'end';
+            //             }
+            //         } else {
+            //             for (let i = 0; i < slides.length; i++) {
+            //             slides[i].style.scrollSnapAlign = 'start';
+            //             }
+            //         }
+            //         prevScrollPos = currentScrollPos;
+
+            //     },50);
+
+
+            // });
+
+            // const container = document.querySelector('.websitebody');
+            // const slides = document.querySelectorAll('.slides');
+            // let currentSlide = 0;
+            // let scrollDirection = null;
+
+            // // Set initial scroll snapping alignment to 'start'
+            // for (let i = 0; i < slides.length; i++) {
+            //     slides[i].style.scrollSnapAlign = 'start';
+            // }
+
+            // container.addEventListener('mousewheel', (e) => {
+            // scrollDirection = e.deltaY > 0 ? 'down' : 'up';
+            // });
+
+            // container.addEventListener('scroll', () => {
+            // const currentScrollPos = container.scrollTop;
+            // const slideHeight = slides[currentSlide].offsetHeight;
+            // const snapThreshold = slideHeight / 2;
+
+            // // Determine whether to snap to the start or end of the slide
+            // if (scrollDirection === 'up' && currentScrollPos < snapThreshold) {
+            //     slides[currentSlide].style.scrollSnapAlign = 'end';
+            // } else if (scrollDirection === 'down' && currentScrollPos > snapThreshold) {
+            //     slides[currentSlide].style.scrollSnapAlign = 'start';
+            // }
+
+            // // Update current slide index based on scroll position
+            // for (let i = 0; i < slides.length; i++) {
+            //     const slideTop = slides[i].offsetTop - container.offsetTop;
+            //     if (currentScrollPos >= slideTop && currentScrollPos < slideTop + slideHeight) {
+            //     currentSlide = i;
+            //     break;
+            //     }
+            // }
+            // });
+
+            // const container = document.querySelector('.websitebody');
+            // const productBlock = document.querySelector('#productblock');
+            // let currentSlide = 0;
+
+            // // Set initial scroll snapping alignment to 'start'
+            // for (let i = 0; i < container.children.length; i++) {
+            // container.children[i].style.scrollSnapAlign = 'start';
+            // }
+
+            // container.addEventListener('scroll', () => {
+            // const currentScrollPos = container.scrollTop;
+            // const productBlockTop = productBlock.offsetTop - container.offsetTop;
+            // const productBlockBottom = productBlockTop + productBlock.offsetHeight;
+
+            // // Determine whether to snap to the start or end of the product block
+            // if (currentScrollPos >= productBlockTop && currentScrollPos < productBlockBottom) {
+            //     productBlock.style.scrollSnapAlign = 'start';
+            // } else {
+            //     productBlock.style.scrollSnapAlign = 'end';
+            // }
+
+            // // Update current slide index based on scroll position
+            // for (let i = 0; i < container.children.length; i++) {
+            //     const slideTop = container.children[i].offsetTop - container.offsetTop;
+            //     if (currentScrollPos >= slideTop && currentScrollPos < slideTop + container.children[i].offsetHeight) {
+            //     currentSlide = i;
+            //     break;
+            //     }
+            // }
+            // });
+
+
+        </script>
     </body>
 </html>
