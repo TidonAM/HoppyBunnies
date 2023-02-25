@@ -196,6 +196,7 @@ body{
 	font-family: 'No Virus';
 	color: white;
 	font-size: 10vh;
+	text-align: center;
 	text-shadow: .5vh .5vh 0vh rgba(0, 0, 0, .2);
 	background-color: rgba(110, 80, 70, .7);
 	padding: 2vh 3vh 1vh 3vh;
@@ -526,6 +527,10 @@ hr.rounded {
 }
 
 @media only screen and (max-width: 850px) {
+
+	.banner-logo p {
+		font-size: 10vw;
+	}
 
 	.titletest {
 		width: 100vw;
