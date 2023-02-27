@@ -856,7 +856,7 @@ hr.rounded {
 }
 
 #foodbanner{
-	background-image: url("/assets/rabbitseating.png");
+	background-image: url("../assets/rabbitseating.png");
 	border-top: 8px solid var(--color6);
 	border-bottom: 8px solid var(--color6);
 	background-position: center;
