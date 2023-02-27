@@ -1,72 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="icon" type="image/x-icon" href="assets/logo.png">
+<link rel="icon" type="image/x-icon" href="assets/logoonly1.png">
 <title>Hoppy Bunnies</title>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style/style.css">
-	    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/33f8248b0d.js" crossorigin="anonymous"></script>
-                
-    </head>
-    <body>
-        <!-- <div class ="navbar">
-            <div class="container">
-                <div class="navbar-logodiv">
-                    <img src="assets/logo 2.png" alt="Hoppy Bunnies" class="logo">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/33f8248b0d.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    
+    <div class="websitebody">
+        
+        <div class="backToTop" >
+            <p>Back To Services</p>
+            <i class="fa-solid fa-angles-up" onclick="scrollToElement('#productblock')"></i>
+        </div>
+        
+        <div class="banner slides" id="Home">
+            
+            <video autoplay loop muted poster="/assets/bannersecond.jpg">
+                <source src="assets/vid1.mp4" type="video/mp4">
+            </video>
+            
+            <div class="banner-flex">
+                <div class="banner-logo">
+                    <div class="banner-logo-img"></div>
+                    <p>Hoppy Bunnies</p>
                 </div>
-                <div class="navbar-links">
-                    <ul class="navbar-ul">
-                        <li><a href="#Home">HOME</a></li>
-                        <li><a href="#Products">PRODUCTS</a></li>
-                        <li><a href="#lower3">GALLERY</a></li>
-                        <li><a href="#lower4">ABOUT US</a></li>
-                        <li><a href="#lower5">CONTACT US</a></li>
-                    </ul> 
-              </div>
-            </div>
-        </div> -->
-
-        <div class="websitebody">
-
-            <div class="backToTop" onclick="scrollToElement('#productblock')">
-                <p>Back To Products</p>
-                <i class="fa-solid fa-angles-up"></i>
-            </div>
-
-            <div class="banner slides" id="Home">
-                <!-- <h1>A PLACE TO CALL HOME FOR YOU, AND YOUR RABBITS</h1> -->
-                <div class="banner-flex">
-                    <div class="banner-logo">
-                        <div class="banner-logo-img"></div>
-                        <p>Hoppy Bunnies</p>
-                    </div>
-                    <div class="banner-verti-text">
-                        <h1>A PLACE TO CALL HOME FOR YOUR RABBITS</h1>
-                    </div>
-                    <div class="banner-verti-button">
-                        <button id="LearnMore" onclick="scrollToElement('#productblock')">SEE OUR SERVICES</button>
-                    </div>
-                    
+                <div class="banner-verti-text">
+                    <h1>A PLACE TO CALL HOME FOR YOUR RABBITS</h1>
+                </div>
+                <div class="banner-verti-button">
+                    <!-- <button id="LearnMore" onclick="scrollToElement('#productblock')">SEE OUR SERVICES</button> -->
+                    <a id="welcome-btn" onclick="scrollToElement('#welcomeblock')">
+                        <div>
+                            <i class="fa-solid fa-angles-down"></i>
+                        </div>
+                    </a>
                 </div>
                 
             </div>
-
-            <div class="infoblocktest slides" id="productblock">
-                <div class="innerinfotest">
-                    <div class="div4verti1">
-                        <div class="titletest">
-                            <h1>OUR PRODUCTS</h1>
+            
+        </div>
+        
+        <div class="block-class slides" id="welcomeblock">
+            <div class="block-inner-class">
+                <div class="block-title-cont-class">
+                    <div class="block-title-class">
+                        <h1>WELCOME PAGE</h1>
+                    </div>
+                </div>
+                <div class="block-content-cont-class">
+                    <div id="welcome-content-cont">
+                        <p>WELCOME TO HOPPY BUNNIES,<br>YOUR ONE-STOP-SHOP FOR ALL YOUR RABBIT NEEDS. 
+                            <br><br>FROM HIGH QUALITY DIY CAGES AND NUTRITIOUS FOOD PRODUCTS TO ESSENTIAL 
+                            VITAMINS AND A WIDE RANGE OF ACCESSORIES, WE'RE DEDICATED TO PROVIDING 
+                            EVERYTHING YOU NEED TO KEEP YOUR FURRY FRIEND HAPPY AND HEALTHY.</p>
                         </div>
                     </div>
-                    <div class="div4verti2">
+                </div>
+            </div>
+            
+            <div class="block-class slides" id="productblock">
+                <div class="block-inner-class">
+                    <div class="block-title-cont-class">
+                        <div class="block-title-class">
+                            <h1>OUR SERVICES</h1>
+                        </div>
+                    </div>
+                    <div class="block-content-cont-class">
                         <a onclick="scrollToElement('#rabbitblock')">
-                            <div class="ingridtest blogimg">
+                            <div class="block-content-class animation-grid">
                                 <div class="prodrabbits prodgrid"></div>
                                 <br>
                                 <h1 class="desktopinfo">
@@ -89,8 +100,8 @@
                                 </h1>
                             </div>
                         </a>
-                        <a onclick="scrollToElement('#cageblock')">
-                            <div class="ingridtest blogimg">
+                        <!-- <a onclick="scrollToElement('#cageblock')">
+                            <div class="block-content-class animation-grid">
                                 <div class="prodhouse prodgrid"></div>
                                 <br>
                                 <h1 class="desktopinfo">
@@ -112,22 +123,16 @@
                                     CAGES
                                 </h1>
                             </div>
-                        </a>
+                        </a> -->
                         <a onclick="scrollToElement('#foodblock')">
-                            <div class="ingridtest blogimg">
+                            <div class="block-content-class animation-grid">
                                 <div class="prodfood prodgrid"></div>
                                 <br>
                                 <h1 class="desktopinfo">
                                     <br>
                                     <hr class="rounded">
                                     <br>
-                                    AFFORDABLE YET
-                                    TASTY PET FOOD
-                                    THAT YOU CAN
-                                    FEED YOUR 
-                                    RABBITS AND
-                                    SURELY MAKE 
-                                    THEM HAPPY!
+                                    NUTRITIOUS AND DELICIOUS FOOD PRODUCTS SPECIALLY FORMULATED FOR RABBITS
                                 </h1>
                                 <h1 class="mobileinfo">
                                     <br>
@@ -138,7 +143,7 @@
                             </div>
                         </a>
                         <a onclick="scrollToElement('#accblock')">
-                            <div class="ingridtest blogimg">
+                            <div class="block-content-class animation-grid">
                                 <div class="prodaccessories prodgrid"></div>
                                 <br>
                                 <h1 class="desktopinfo">
@@ -164,214 +169,339 @@
                     </div>
                 </div>
             </div>
-
-            <div class="infoblocktest slides" id="rabbitblock">
-                <div class="innerinfotest">
-                    <div class="div4verti1">
-                        <div class="titletest">
+            
+            <div class="block-class slides" id="rabbitblock">
+                <div class="block-inner-class">
+                    <div class="block-title-cont-class">
+                        <div class="block-title-class">
                             <h1>OUR RABBITS</h1>
                         </div>
                     </div>
-                    <div class="div4verti2 vh100">
-
+                    <div class="block-carousel-cont-class" id="rabbitcarouselcont">
+                        <div class="block-carousel-class" id="rabbitcarousel">
+                            <input type="radio" name="radio-btn" id="radio01">
+                            <input type="radio" name="radio-btn" id="radio02">
+                            <input type="radio" name="radio-btn" id="radio03">
+                            <input type="radio" name="radio-btn" id="radio04">
+                            <input type="radio" name="radio-btn" id="radio05">
+                            <input type="radio" name="radio-btn" id="radio06">
+                            <input type="radio" name="radio-btn" id="radio07">
+                            <input type="radio" name="radio-btn" id="radio08">
+                            <input type="radio" name="radio-btn" id="radio09">
+                            <input type="radio" name="radio-btn" id="radio10">
+                            <div class="image-slide first-slide">
+                                <img src="assets/bunny01.jpg" alt="">
+                            </div>
+                            <div class="image-slide">
+                                <img src="assets/bunny02.jpg" alt="">
+                            </div>
+                            <div class="image-slide">
+                                <img src="assets/bunny03.jpg" alt="">
+                            </div>
+                            <div class="image-slide">
+                                <img src="assets/bunny04.jpg" alt="">
+                            </div>
+                            <div class="image-slide">
+                                <img src="assets/bunny05.jpg" alt="">
+                            </div>
+                            <div class="image-slide">
+                                <img src="assets/bunny06.jpg" alt="">
+                            </div>
+                            <div class="image-slide">
+                                <img src="assets/bunny07.jpg" alt="">
+                            </div>
+                            <div class="image-slide">
+                                <img src="assets/bunny08.jpg" alt="">
+                            </div>
+                            <div class="image-slide">
+                                <img src="assets/bunny09.jpg" alt="">
+                            </div>
+                            <div class="image-slide">
+                                <img src="assets/bunny10.jpg" alt="">
+                            </div>
+                            <div id="carousel-navigation-auto">
+                                <div class="auto-btn01"></div>
+                                <div class="auto-btn02"></div>
+                                <div class="auto-btn03"></div>
+                                <div class="auto-btn04"></div>
+                                <div class="auto-btn05"></div>
+                                <div class="auto-btn06"></div>
+                                <div class="auto-btn07"></div>
+                                <div class="auto-btn08"></div>
+                                <div class="auto-btn09"></div>
+                                <div class="auto-btn10"></div>
+                            </div>
+                            <div id="carousel-navigation-manual">
+                                <label for="radio01" class="manual-btn"></label>
+                                <label for="radio02" class="manual-btn"></label>
+                                <label for="radio03" class="manual-btn"></label>
+                                <label for="radio04" class="manual-btn"></label>
+                                <label for="radio05" class="manual-btn"></label>
+                                <label for="radio06" class="manual-btn"></label>
+                                <label for="radio07" class="manual-btn"></label>
+                                <label for="radio08" class="manual-btn"></label>
+                                <label for="radio09" class="manual-btn"></label>
+                                <label for="radio10" class="manual-btn"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="rabbitblockinfocont">
+                        <div id="rabbitblockinfo">
+                            <p>Here at Hoppy Bunnies, 
+                                we are dedicated to providing the highest level 
+                                of care and attention to all of our adorable rabbits, 
+                                ensuring they are happy and healthy companions for you 
+                                to enjoy with our wide range of rabbit accessories.
+                            </p>
+                        </div>
                     </div>
                 </div>
+                
+                
+                <script>
+                    var counter = 2;
+                    
+                    if (document.getElementById('radio01').checked == false) {
+                        document.getElementById('radio01').checked = true;
+                    }
+                    
+                    const radioGroup = document.getElementById("rabbitcarousel");
+                    radioGroup.addEventListener("change", (event) => {
+                        const selectedRadio = event.target;
+                        console.log(selectedRadio);
+                        
+                        
+                        switch(selectedRadio.id) {
+                            case 'radio01':
+                            case 'radio02':
+                            case 'radio03':
+                            case 'radio04':
+                            case 'radio05':
+                            case 'radio06':
+                            case 'radio07':
+                            case 'radio08':
+                            case 'radio09':
+                            case 'radio10':
+                            counter = Number(selectedRadio.id.slice(-2));
+                            break;
+                            default:
+                            console.error('Invalid radio button selected:', selectedRadio);
+                        }
+                    });
+                    
+                    setInterval(function() {
+                        if (counter < 10) {
+                            document.getElementById('radio0' + counter).checked = true;
+                        } else {
+                            document.getElementById('radio' + counter).checked = true;
+                        }
+                        
+                        counter++;
+                        if (counter >10){
+                            counter = 1;
+                        }
+                    },5000);
+                </script>
             </div>
-
-            <div class="infoblocktest slides" id="cageblock">
-                <div class="innerinfotest">
-                    <div class="div4verti1">
-                        <div class="titletest">
+            
+            <!-- <div class="block-class slides" id="cageblock">
+                <div class="block-inner-class">
+                    <div class="block-title-cont-class">
+                        <div class="block-title-class">
                             <h1>OUR CAGES</h1>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="infoblocktest slides" id="foodblock">
-                <div class="innerinfotest">
-                    <div class="div4verti1">
-                        <div class="titletest">
+            </div> -->
+            
+            <div class="block-class slides" id="foodblock">
+                <div class="block-inner-class" id="foodbanner">
+                    <div class="block-title-cont-class">
+                        <div class="block-title-class">
                             <h1>OUR FOOD PRODUCTS</h1>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="infoblocktest slides" id="accblock">
-                <div class="innerinfotest">
-                    <div class="div4verti1">
-                        <div class="titletest">
-                            <h1>OUR ACCESSORIES</h1>
+                    <div class="foodcont1">
+                        <p>ALFALFA (LUCERNE)</p>
+                        <div class="content1">
+                            <img src="/assets/food.jpg">
+                            
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="infoblocktest slides" id="contactblock">
-                <div class="innerinfotest">
-                    <div class="div4verti1">
-                        <div class="titletest">
-                            <h1>CONTACT US</h1>
+                        <div class="overlay1">
+                            <div class="textcont1">
+                                <span id="descfirst1"> Alfalfa is actually neither hay
+                                    nor grass! It is in fact a legume and is
+                                    also grown as a richer type of animal
+                                    feed.
+                                    Alfalfa hay has a much higher protein
+                                    level than grass / hay, which makes it
+                                    very fattening to feed as a main
+                                    ingredient for an average adult rabbit.<br></br></span>
+                                    <span id="desc1"> Note:
+                                        Alfalfa hay also has a significantly higher calcium content (1.5% compared to 0.5% in grass hay), so rabbits with a history of calcium-related issues, such as bladder sludge, should avoid it.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="foodcont2">
+                                <p>CHEXER PELLETS</p>
+                                <div class="content2">
+                                    <img src="/assets/food2.jpg">
+                                </div>
+                                <div class="overlay2">
+                                    <div class="textcont2">
+                                        <span id="descfirst2">Guaranteed Analysis: 
+                                            
+                                            Crude Protein              NLT 17.00%
+                                            Crude Fat                     NLT 3.00%
+                                            Crude Fiber                 NLT 10.00%
+                                            Moisture                     NMT 12.00%
+                                            Phosphorus                NLT .50%
+                                            Calcium                      1.30-1.80%
+                                            
+                                            Ingredients:
+                                            Corn, Soy Bean Meat, Wheat Pollard, Rice Bran, Distiller, Dried Grain Solubles, Processed Grain By-Products, Salt, Calcium Carbonate, L-lysine, DL-Methionine, Vitamins and Mineral Premixes, Phystaste, Antioxidant, Toxin Binder and  Mold Inhibitor.<br></br> </span>
+                                            <span id="desc2">Feeding Guide:
+                                                Buck: Feed at the rate of 85-140 grams per head per day.<br></br> 
+                                                Gestating Doe: Feed at the rate of 115-145 grams per head per day.<br></br> 
+                                                Lactating Doe: Feed at the rate of 115-225 grams per head per day.<br></br> 
+                                                
+                                                Note: For fancy types, feeding program can be adjusted based on breed and body weight of rabbit.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="block-class slides" id="accblock">
+                                <div class="block-inner-class">
+                                    <div class="block-title-cont-class">
+                                        <div class="block-title-class">
+                                            <h1>OUR ACCESSORIES</h1>
+                                        </div>
+                                    </div>
+                                    <div class="divtest">
+                                        <img src="/assets/cage.jpg">
+                                        <div class="divtestoverlay">
+                                            <p id="name">Rabbit Cage</p>
+                                            <p id="desc">Hand-crafted using Rabbit matting, Galvanized Wire mesh and 3.6X200 MM of zipties</p>
+                                        </div>
+                                    </div>
+                                    <div class="divtest">
+                                        <img src="/assets/dextrosepowderfront.jpg">
+                                        <div class="divtestoverlaydex">
+                                            <p id="name">Dextrose Powder</p>
+                                            <p id="desc">Dextrose or Glucose is a carbohydrate and valuable source of energy rapidly and easily absorbed. It stimulates healthy appetite and sustains adequate water intake. It is indicated for active animals in building stamina and vigor before and after strenuous activities.</p>
+                                        </div>
+                                    </div>
+                                    <div class="divtest">
+                                        <img src="/assets/BORDER-cabletie.jpg">
+                                        <div class="divtestoverlay">
+                                            <p id="name">Zipties</p>
+                                            <p id="desc">Size: 3.6X200 MM
+                                                QTY: 100 PCS</p>
+                                        </div>
+                                    </div>
+                                    <div class="divtest">
+                                        <img src="/assets/syringe1.jpg">
+                                        <div class="divtestoverlay">
+                                            <p id="name">Syringes</p>
+                                            <p id="desc">A syringe is used to take the vitamins syrup for rabbits</p>
+                                        </div>
+                                    </div>
+                                    <div class="divtest">
+                                        <img src="/assets/vitaminfront.jpg">
+                                        <div class="divtestoverlayvit">
+                                            <p id="name">Vitamins</p>
+                                            <p id="desc">Specially formulated vitamin supplement designed to provide all the essential nutrients that rabbits need to maintain optimal health. Packed with a blend of vitamins, minerals, and other vital nutrients</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="block-class slides" id="contactblock">
+                                <div class="block-inner-class">
+                                    <div class="block-title-cont-class">
+                                        <div class="block-title-class">
+                                            <h1>CONTACT US</h1>
+                                        </div>
+                                    </div>
+                                    <div id="contacts-content-cont">
+                                        <div class="contacts-title">
+                                            <p>Like what you see here? Contact us</p>
+                                        </div>
+                                        <div class="contacts-content">
+                                            <a href=""></a>
+                                            <a href=""></a>
+                                            <a href=""></a>
+                                            <a href=""></a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
                         </div>
-                    </div>
-                </div>
-            </div>
+                        
+                        <script>
+                            
+                            function scrollToElement($snap) {
+                                const container = document.querySelector('.websitebody');
+                                const snapPoint = document.querySelector($snap);
+                                const y = snapPoint.offsetTop - container.offsetTop;
+                                container.scroll({ top: y, behavior: 'smooth' });
+                            }
+                            
+                            const websitebody = document.querySelector('.websitebody');
+                            
+                            
+                            websitebody.addEventListener('scroll', function() {
+                                var productblock = document.querySelector('#productblock');
+                                var element = document.querySelector('.backToTop');
+                                var position = productblock.getBoundingClientRect();
+                                if (position.bottom <= 10) {
+                                    element.classList.add('visible');
+                                } else {
+                                    element.classList.remove('visible');
+                                }
+                            });
+                            
+                            function debounce(func, delay) {
+                                clearTimeout(timeoutId);
+                                timeoutId = setTimeout(func, delay);
+                            }
+                            
+                            
+                        </script>
+                    </body>
+                    </html>
 
-        </div>
-<!-- 
-        <div class="footer">
-            <div class="container">
-                <div class="footer-logo">
-                    <img class="img-footer" src="/assets/logo.png">
-                </div>
-                <div class="footer-quote">
-                    <h3>A place to call home for your rabbits</h3>
-                </div>
-                
-            </div>
-        </div> -->
-
-        <script>
-            
-            function scrollToElement($snap) {
-                // window.scrollTo({
-                //     top: $int,
-                //     behavior: 'smooth'
-                // });
-                const container = document.querySelector('.websitebody');
-                const snapPoint = document.querySelector($snap);
-                const y = snapPoint.offsetTop - container.offsetTop;
-                container.scroll({ top: y, behavior: 'smooth' });
-            }
-
-            const websitebody = document.querySelector('.websitebody');
-            // websitebody.addEventListener('scroll', function() {
-            //     var element = document.querySelector('.backToTop');
-            //     var position = element.getBoundingClientRect();
-
-            //     // checking whether fully visible
-            //     if(position.top < window.innerHeight && position.bottom >= 0) {
-            //         setTimeout(function() {
-            //             element.classList.add('visible');
-            //         },500);
-            //     } else {
-            //         element.classList.remove('visible');
-            //     }
-            // });
-
-            
-            websitebody.addEventListener('scroll', function() {
-                var productblock = document.querySelector('#productblock');
-                var element = document.querySelector('.backToTop');
-                var position = productblock.getBoundingClientRect();
-                if (position.bottom <= 0) {
-                    // setTimeout(function() {
-                        element.classList.add('visible');
-                    // },500);
-                } else {
-                    element.classList.remove('visible');
-                }
-            });
-
-            function debounce(func, delay) {
-                clearTimeout(timeoutId);
-                timeoutId = setTimeout(func, delay);
-            }
-
-            // let prevScrollPos = websitebody.scrollTop;
-            // let timeoutId;
-
-            // websitebody.addEventListener('scroll', () => {
-            //     var slides = document.querySelectorAll('.slides')
-            //     const currentScrollPos = websitebody.scrollTop;
-
-            //     clearTimeout(timeoutId);
-            //     debounce( function() {
-            //         if (currentScrollPos < prevScrollPos) {
-            //             for (let i = 0; i < slides.length; i++) {
-            //             slides[i].style.scrollSnapAlign = 'end';
-            //             }
-            //         } else {
-            //             for (let i = 0; i < slides.length; i++) {
-            //             slides[i].style.scrollSnapAlign = 'start';
-            //             }
-            //         }
-            //         prevScrollPos = currentScrollPos;
-
-            //     },50);
-
-
-            // });
-
-            // const container = document.querySelector('.websitebody');
-            // const slides = document.querySelectorAll('.slides');
-            // let currentSlide = 0;
-            // let scrollDirection = null;
-
-            // // Set initial scroll snapping alignment to 'start'
-            // for (let i = 0; i < slides.length; i++) {
-            //     slides[i].style.scrollSnapAlign = 'start';
-            // }
-
-            // container.addEventListener('mousewheel', (e) => {
-            // scrollDirection = e.deltaY > 0 ? 'down' : 'up';
-            // });
-
-            // container.addEventListener('scroll', () => {
-            // const currentScrollPos = container.scrollTop;
-            // const slideHeight = slides[currentSlide].offsetHeight;
-            // const snapThreshold = slideHeight / 2;
-
-            // // Determine whether to snap to the start or end of the slide
-            // if (scrollDirection === 'up' && currentScrollPos < snapThreshold) {
-            //     slides[currentSlide].style.scrollSnapAlign = 'end';
-            // } else if (scrollDirection === 'down' && currentScrollPos > snapThreshold) {
-            //     slides[currentSlide].style.scrollSnapAlign = 'start';
-            // }
-
-            // // Update current slide index based on scroll position
-            // for (let i = 0; i < slides.length; i++) {
-            //     const slideTop = slides[i].offsetTop - container.offsetTop;
-            //     if (currentScrollPos >= slideTop && currentScrollPos < slideTop + slideHeight) {
-            //     currentSlide = i;
-            //     break;
-            //     }
-            // }
-            // });
-
-            // const container = document.querySelector('.websitebody');
-            // const productBlock = document.querySelector('#productblock');
-            // let currentSlide = 0;
-
-            // // Set initial scroll snapping alignment to 'start'
-            // for (let i = 0; i < container.children.length; i++) {
-            // container.children[i].style.scrollSnapAlign = 'start';
-            // }
-
-            // container.addEventListener('scroll', () => {
-            // const currentScrollPos = container.scrollTop;
-            // const productBlockTop = productBlock.offsetTop - container.offsetTop;
-            // const productBlockBottom = productBlockTop + productBlock.offsetHeight;
-
-            // // Determine whether to snap to the start or end of the product block
-            // if (currentScrollPos >= productBlockTop && currentScrollPos < productBlockBottom) {
-            //     productBlock.style.scrollSnapAlign = 'start';
-            // } else {
-            //     productBlock.style.scrollSnapAlign = 'end';
-            // }
-
-            // // Update current slide index based on scroll position
-            // for (let i = 0; i < container.children.length; i++) {
-            //     const slideTop = container.children[i].offsetTop - container.offsetTop;
-            //     if (currentScrollPos >= slideTop && currentScrollPos < slideTop + container.children[i].offsetHeight) {
-            //     currentSlide = i;
-            //     break;
-            //     }
-            // }
-            // });
-
-
-        </script>
-    </body>
-</html>
+                    <!-- 
+                        <div class="footer">
+                            <div class="container">
+                                <div class="footer-logo">
+                                    <img class="img-footer" src="/assets/logo.png">
+                                </div>
+                                <div class="footer-quote">
+                                    <h3>A place to call home for your rabbits</h3>
+                                </div>
+                                
+                            </div>
+                        </div> -->
+                        
+                        <!-- <div class ="navbar">
+                            <div class="container">
+                                <div class="navbar-logodiv">
+                                    <img src="assets/logo 2.png" alt="Hoppy Bunnies" class="logo">
+                                </div>
+                                <div class="navbar-links">
+                                    <ul class="navbar-ul">
+                                        <li><a href="#Home">HOME</a></li>
+                                        <li><a href="#Products">PRODUCTS</a></li>
+                                        <li><a href="#lower3">GALLERY</a></li>
+                                        <li><a href="#lower4">ABOUT US</a></li>
+                                        <li><a href="#lower5">CONTACT US</a></li>
+                                    </ul> 
+                                </div>
+                            </div>
+                        </div> -->
+                        
