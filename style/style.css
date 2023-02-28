@@ -28,6 +28,7 @@ html {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	user-select: none;
 }
 body{
 	/* height: 2550px; */
@@ -206,7 +207,10 @@ a#welcome-btn {
 	display: flex;
 	justify-content: center; /* center horizontally */
 	/* align-items: center; center vertically */
-	
+}
+
+.wbtn2 {
+	bottom: 6vh;
 }
 
 
@@ -396,8 +400,8 @@ a#welcome-btn i {
 #mobilerabbitblockinfo {
 	display: none;
 	width: 80vw;
-	padding: 5vh 40px 2vh 40px;
-	height: 30vh;
+	padding: 7vh 40px 2vh 40px;
+	/* height: 30vh; */
 	border: .7vh solid var(--color2);
 	border-radius: 0vh 0vh 5vh 5vh;
 	margin-top: -50px;
@@ -415,7 +419,7 @@ a#welcome-btn i {
 	color: var(--color2);
 	text-shadow: 0.3vh 0.3vh 0vh rgb(0 0 0 / 50%);
 	/* padding: 10vw 5vw 10vw 5vw; */
-	line-height: 4vh;
+	/* line-height: 4vh; */
 }
 
 #rabbitcarousel .image-slide {
@@ -837,6 +841,14 @@ hr.rounded {
 
 @media only screen and (max-width: 850px) {
 
+	#foodtitle h1{
+		font-size: 9vw;
+	}
+
+	#contacttitle h1 {
+
+	}
+
 	.foodcont1 {
 		display: none !important;
 	}
@@ -930,6 +942,7 @@ hr.rounded {
 	background-color: var(--color5);
 	width: 350px;
 	height: 65vh;
+	/* height: 700px; */
 	justify-content: center;
 	transition: transform 0.5s ease-in-out;
 	padding-top: 15vh;
@@ -940,27 +953,27 @@ hr.rounded {
 }
 .divtest img{
 	display: block;
-	width: 100%;
+	width: 250px;
+	padding: 0vh 10px 0vh 10px;
 	height: auto;
 	transition: transform 0.5s ease;
-	height: 35vh;
-	width: 30vh;
+	height: 30vh;
 	
 }
 .divtest:hover img {
 	transform: scale(1.1);
-	transform: translateY(-10vh);
+	transform: translateY(-13vh);
 }
 .divtest:hover {
 	transform: scale(1.05);
 }
 .divtest .divtestoverlay{
 	position: absolute;
-	top: 44vh;
+	top: 39vh;
 	left: 0;
 	width: 100%;
 	color: #333;
-	font-size: 65vw;
+	font-size: 20vw;
 	font-family: 'Nunito';
 	text-align: center;
 	opacity: 0;
@@ -970,11 +983,11 @@ hr.rounded {
 }
 .divtest .divtestoverlayvit{
 	position: absolute;
-	top: 42vh;
+	top: 35vh;
 	left: 0;
 	width: 100%;
 	color: #333;
-	font-size: 18px;
+	/* font-size: 18px; */
 	font-family: 'Nunito';
 	text-align: center;
 	opacity: 0;
@@ -984,7 +997,7 @@ hr.rounded {
 }
 .divtest .divtestoverlaydex{
 	position: absolute;
-	top: 63%;
+	top: 33vh;
 	left: 0;
 	width: 100%;
 	color: #333;
@@ -1007,29 +1020,41 @@ hr.rounded {
 	opacity: 1;
 	height: auto;
 }
+
+#acc-content::-webkit-scrollbar {
+	width: 1vh;
+	height: 1vh;
+	background: transparent;
+}
+
+#acc-content::-webkit-scrollbar-thumb {
+	border-radius: 30px;
+	border: 3px solid #231F20;
+}
+
 .divtestoverlay #name{
-	font-size: 3.5vw;
+	font-size: 2vw;
 	font-weight: bold;
 }
 .divtestoverlay #desc{
-	font-size: 2.5vw;
-	padding: 3vw;
+	font-size: 1vw;
+	padding: 2vw;
 }
 .divtestoverlayvit #name{
-	font-size: 3.5vw;
+	font-size: 2vw;
 	font-weight: bold;
 }
 .divtestoverlayvit #desc{
-	font-size: 2vw;
-	padding: 3vw;
+	font-size: 1vw;
+	padding: 1vw;
 }
 .divtestoverlaydex #name{
-	font-size: 3.5vw;
+	font-size: 2vw;
 	font-weight: bold;
 }
 .divtestoverlaydex #desc{
-	font-size: 2vw;
-	padding: 3vw;
+	font-size: 1vw;
+	padding: 1vw;
 
 }
 
@@ -1171,7 +1196,7 @@ hr.rounded {
 .overlay2 {
 	position: absolute;
 	top: 3vh;
-	left: 0;
+	right: 0;
 	width: 40vw;
 	height: 60vh;
 	opacity: 0;
@@ -1204,7 +1229,7 @@ hr.rounded {
 	opacity: 0;
 	transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out;
 	font-family: 'Nunito';
-	font-size: 1.6vw;
+	font-size: 1.2vw;
 }
 .overlay2 #desc2 {
 	opacity: 0;
@@ -1221,7 +1246,7 @@ hr.rounded {
 	opacity: 1;
 }
 .foodcont2:hover .overlay2 {
-	transform: translateX(61%);
+	transform: translateX(113.5%);
 	opacity: 1;
 }
 .foodcont2:hover .content2{
@@ -1286,10 +1311,16 @@ hr.rounded {
 	font-size: 5vh;
 }
 
+.foodarrow:hover{
+	transform: scale(1.1);
+}
+
 .foodarrow {
+	cursor: pointer;
 	display: flex;
 	width: 80vw;
 	align-items: center;
+	transition: transform 0.5s ease;
 }
 
 .divend {
@@ -1365,46 +1396,50 @@ hr.rounded {
 
 
 /* FOOTER START */
-.footer{
-	width: 100%;
-	overflow: hidden;
-	height: fit-content;
-	padding: 20px;
-	background: var(--color1);
-	z-index: 3;
-	filter: drop-shadow(0px -1px 2px);
-}
-.footer-logo {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.img-footer{
-	max-height: 200px;
-}
-.footer-quote{
-	font-family: Inter;
-	justify-content: center;
-	color: white;
-	display: flex;
-	max-height: 20px;
+#contactblock{
+
 }
 .contabt-cont{
-	position: relative;
-	display: inline-block;
+
 }
 .contacts-cont{
 	position: relative;
 	background-color: var(--color6);
-	height: 20vh;
+	height: 10vh;
 	width: 100vh;
+	border: 0.5vh solid var(--color2);
+	border-radius: 1vh;
+	filter: drop-shadow(.5vh .5vh 1vh rgba(0, 0, 0, .2));
 }
 .aboutus-cont{
-	margin-top: 2vh;
+	margin-top: 4vh;
 	position: relative;
-	background-color: var(--color5);
-	height: 45vh;
+	background-color: var(--color6);
+	height: 52vh;
 	width: 100vh;
+	filter: drop-shadow(.5vh .5vh 1vh rgba(0, 0, 0, .2));
+	border: 0.5vh solid var(--color2);
+	border-radius: 1vh;
+}
+.contacts-content{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	place-items: center;
+	font-family: 'Itim';
+	color: var(--color3);
+	font-size: 2vh;
+	text-transform: uppercase;
+	margin-top: 1.5vh;
+}
+.contacts-content p{
+	margin-top: 1vh;
+	color: var(--color2);
+}
+.aboutus-content p{
+	color: var(--color2);
+	font-family: 'Nunito';
+	font-size: 1vw;
+	padding: 4vh 5vh 1vh 5vh;
 }
 /* FOOTER END */
 
