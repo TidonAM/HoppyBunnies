@@ -22,7 +22,7 @@
             <p>Back To Services</p>
             <i class="fa-solid fa-angles-up" onclick="scrollToElement('#productblock')"></i>
         </div>
-    
+        
         <div class="banner slides" id="Home">
             
             <video autoplay loop muted poster="assets/bannersecond.jpg">
@@ -52,11 +52,11 @@
         
         <div class="block-class slides" id="welcomeblock">
             <div class="block-inner-class">
-                <div class="block-title-cont-class">
+                <!-- <div class="block-title-cont-class">
                     <div class="block-title-class">
                         <h1>WELCOME PAGE</h1>
                     </div>
-                </div>
+                </div> -->
                 <div class="block-content-cont-class">
                     <div id="welcome-content-cont">
                         <p>WELCOME TO HOPPY BUNNIES,<br>YOUR ONE-STOP-SHOP FOR ALL YOUR RABBIT NEEDS. 
@@ -66,7 +66,7 @@
                         </p>
                         <div class="banner-verti-button">
                             <!-- <button id="LearnMore" onclick="scrollToElement('#productblock')">SEE OUR SERVICES</button> -->
-                            <a id="welcome-btn" onclick="scrollToElement('#productblock')">
+                            <a id="welcome-btn" class="wbtn2" onclick="scrollToElement('#productblock')">
                                 <div>
                                     <i class="fa-solid fa-angles-down"></i>
                                 </div>
@@ -179,10 +179,10 @@
                 </div>
             </div>
         </div>
-    
+        
         <div class="block-class slides" id="rabbitblock">
             <div class="block-inner-class" id="rabbitblockinner">
-
+                
                 <div class="block-title-cont-class">
                     <div class="block-title-class">
                         <h1>OUR RABBITS</h1>
@@ -324,14 +324,14 @@
                 },5000);
             </script>
         </div>
-
+        
         <div class="block-class slides" id="foodblock">
             <div class="block-inner-class" id="foodbanner">
                 <video autoplay loop muted poster="assets/bannersecond.jpg">
                     <source src="assets/vid3.mp4" type="video/mp4">
                 </video>
                 <div class="block-title-cont-class">
-                    <div class="block-title-class">
+                    <div class="block-title-class" id="foodtitle">
                         <h1>OUR FOOD PRODUCTS</h1>
                     </div>
                 </div>
@@ -354,211 +354,210 @@
                                     Alfalfa hay also has a significantly higher calcium content (1.5% compared to 0.5% in grass hay), so rabbits with a history of calcium-related issues, such as bladder sludge, should avoid it.</span>
                                 </div>
                             </div>
-                </div>
-                <div class="foodcont2">
-                    <div class="content2">
-                        <img src="assets/food2.jpg">
-                    </div>
-                    <p>CHEXER<br>PELLETS</p>
-                    <div class="overlay2">
-                        <div class="textcont2">
-                            <span id="descfirst2">Guaranteed Analysis: 
+                        </div>
+                        <div class="foodcont2">
+                            <div class="content2">
+                                <img src="assets/food2.jpg">
+                            </div>
+                            <p>CHEXER<br>PELLETS</p>
+                            <div class="overlay2">
+                                <div class="textcont2">
+                                    <span id="descfirst2">Guaranteed Analysis: 
+                                        
+                                        Crude Protein              NLT 17.00%
+                                        Crude Fat                     NLT 3.00%
+                                        Crude Fiber                 NLT 10.00%
+                                        Moisture                     NMT 12.00%
+                                        Phosphorus                NLT .50%
+                                        Calcium                      1.30-1.80%
+                                        
+                                        Ingredients:
+                                        Corn, Soy Bean Meat, Wheat Pollard, Rice Bran, Distiller, Dried Grain Solubles, Processed Grain By-Products, Salt, Calcium Carbonate, L-lysine, DL-Methionine, Vitamins and Mineral Premixes, Phystaste, Antioxidant, Toxin Binder and  Mold Inhibitor.<br></br> </span>
+                                        <span id="desc2">Feeding Guide:
+                                            Buck: Feed at the rate of 85-140 grams per head per day.<br>
+                                            Gestating Doe: Feed at the rate of 115-145 grams per head per day.<br> 
+                                            Lactating Doe: Feed at the rate of 115-225 grams per head per day.<br>
+                                            
+                                            Note: For fancy types, feeding program can be adjusted based on breed and body weight of rabbit.</span>
+                                        </div>
+                                    </div>
+                                </div>
                                 
-                                Crude Protein              NLT 17.00%
-                                Crude Fat                     NLT 3.00%
-                                Crude Fiber                 NLT 10.00%
-                                Moisture                     NMT 12.00%
-                                Phosphorus                NLT .50%
-                                Calcium                      1.30-1.80%
-                                
-                                Ingredients:
-                                Corn, Soy Bean Meat, Wheat Pollard, Rice Bran, Distiller, Dried Grain Solubles, Processed Grain By-Products, Salt, Calcium Carbonate, L-lysine, DL-Methionine, Vitamins and Mineral Premixes, Phystaste, Antioxidant, Toxin Binder and  Mold Inhibitor.<br></br> </span>
-                                <span id="desc2">Feeding Guide:
-                                    Buck: Feed at the rate of 85-140 grams per head per day.<br>
-                                    Gestating Doe: Feed at the rate of 115-145 grams per head per day.<br> 
-                                    Lactating Doe: Feed at the rate of 115-225 grams per head per day.<br>
-                                    
-                                    Note: For fancy types, feeding program can be adjusted based on breed and body weight of rabbit.</span>
+                                <div id="mobilefoodcont" class="block-content-cont-class">
+                                    <div id="mobilefoodcarousel" onload="window.location='#centerfood'">
+                                        <div class="leftfood foodtest">
+                                            <img src="assets/food.jpg" alt="">
+                                        </div>
+                                        <div id="centerfood" class="foodtest">
+                                            <div id="centerfoodinner">
+                                                <div class="foodarrow divend" onclick="scrollToStart()">
+                                                    <a id="foodarrow-a" class="moveleft" onclick="scrollToStart()">
+                                                        <i class="fa-solid fa-angles-left"></i>
+                                                    </a>
+                                                    <p class="centertop">CHEXER<br>PELLETS</p>
+                                                </div>
+                                                
+                                                <div class="foodarrow" onclick="scrollToEnd()">
+                                                    <p class="centerbottom">ALFALFA<br>(LUCERNE)</p>
+                                                    <a  id="foodarrow-a" class="moveright" onclick="scrollToEnd()">
+                                                        <i class="fa-solid fa-angles-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <script>
+                                            function scrollToStart() {
+                                                const parent = document.getElementById('mobilefoodcarousel');
+                                                parent.scrollTo({
+                                                    left: 0,
+                                                    behavior: 'smooth'
+                                                });
+                                            }
+                                            
+                                            function scrollToEnd() {
+                                                const parent = document.getElementById('mobilefoodcarousel');
+                                                parent.scrollTo({
+                                                    left: parent.scrollWidth,
+                                                    behavior: 'smooth'
+                                                });
+                                            }
+                                        </script>
+                                        
+                                        
+                                        <div class="rightfood foodtest">
+                                            <img src="assets/food2.jpg" alt="">
+                                        </div>
+                                        
+                                        <script>
+                                            window.onload = function() {
+                                                const parent = document.getElementById('mobilefoodcarousel');
+                                                const children = parent.querySelectorAll('.foodtest');
+                                                const parentWidth = parent.offsetWidth;
+                                                const childWidth = children[0].offsetWidth;
+                                                const middleIndex = Math.floor(children.length / 2);
+                                                const middleChildPosition = middleIndex * childWidth - parentWidth / 2 + childWidth / 2;
+                                                parent.scrollLeft = middleChildPosition;
+                                            };
+                                            
+                                        </script>
+                                        
+                                    </div>
                                 </div>
                             </div>
-                </div>
-
-                <div id="mobilefoodcont" class="block-content-cont-class">
-                    <div id="mobilefoodcarousel" onload="window.location='#centerfood'">
-                        <div class="leftfood foodtest">
-                            <img src="assets/food.jpg" alt="">
                         </div>
-                        <div id="centerfood" class="foodtest">
-                            <div id="centerfoodinner">
-                                <div class="foodarrow divend">
-                                    <a id="foodarrow-a" class="moveleft" onclick="scrollToStart()">
-                                        <i class="fa-solid fa-angles-left"></i>
-                                    </a>
-                                    <p class="centertop">CHEXER<br>PELLETS</p>
+                        
+                        <div class="block-class slides" id="accblock">
+                            <div class="block-inner-class" id="acc-content-cont">
+                                <div class="block-title-cont-class">
+                                    <div class="block-title-class">
+                                        <h1>OUR ACCESSORIES</h1>
+                                    </div>
+                                </div>
+                                <div id="acc-content">
+                                    <div class="divtest">
+                                        <img src="assets/cage.jpg">
+                                        <div class="divtestoverlay">
+                                            <p id="name">Rabbit Cage</p>
+                                            <p id="desc">Hand-crafted using Rabbit matting, Galvanized Wire mesh and 3.6X200 MM of zipties</p>
+                                        </div>
+                                    </div>
+                                    <div class="divtest">
+                                        <img src="assets/dextrosepowderfront.jpg">
+                                        <div class="divtestoverlaydex">
+                                            <p id="name">Dextrose Powder</p>
+                                            <p id="desc">Dextrose or Glucose is a carbohydrate and valuable source of energy rapidly and easily absorbed. It stimulates healthy appetite and sustains adequate water intake. It is indicated for active animals in building stamina and vigor before and after strenuous activities.</p>
+                                        </div>
+                                    </div>
+                                    <div class="divtest">
+                                        <img src="assets/BORDER-cabletie.jpg">
+                                        <div class="divtestoverlay">
+                                            <p id="name">Zipties</p>
+                                            <p id="desc">Size: 3.6X200 MM
+                                                QTY: 100 PCS
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="divtest">
+                                        <img src="assets/syringe1.jpg">
+                                        <div class="divtestoverlay">
+                                            <p id="name">Syringes</p>
+                                            <p id="desc">A syringe is used to take the vitamins syrup for rabbits</p>
+                                        </div>
+                                    </div>
+                                    <div class="divtest">
+                                        <img src="assets/vitaminfront.jpg">
+                                        <div class="divtestoverlayvit">
+                                            <p id="name">Vitamins</p>
+                                            <p id="desc">Specially formulated vitamin supplement designed to provide all the essential nutrients that rabbits need to maintain optimal health. Packed with a blend of vitamins, minerals, and other vital nutrients</p>
+                                        </div>
+                                    </div>
                                 </div>
                                 
-                                <div class="foodarrow">
-                                    <p class="centerbottom">ALFALFA<br>(LUCERNE)</p>
-                                    <a  id="foodarrow-a" class="moveright" onclick="scrollToEnd()">
-                                        <i class="fa-solid fa-angles-right"></i>
-                                    </a>
+                            </div>
+                        </div>
+                        
+                        <div class="block-class slides" id="contactblock">
+                            <div class="block-inner-class">
+                                <div class="block-title-cont-class">
+                                    <div class="block-title-class" id="foodtitle">
+                                        <h1>CONTACT & ABOUT US</h1>
+                                    </div>
+                                </div>
+                                <div class="contabt-cont">
+                                    <div class="contacts-cont">
+                                            <div class="contacts-content">
+                                                <img src="assets/facebook.png" style="height: 3vh; width: 3vh;">
+                                                <img src="assets/email.png" style="height: 3vh; width: 3vh;">
+                                                <img src="assets/contact.png" style="height: 3vh; width: 3vh; float: right;">
+                                                <a href="https://www.facebook.com/bunchesofbunnies2021" target="_blank"><p>HOPPY PAWS</p></a>
+                                                <p>kathleenmeltan@yahoo.com.ph</p>
+                                                <p>0926 248 3890</p>
+                                            </div>
+                                    </div>
+                                    <div class="aboutus-cont">
+                                        <div class="aboutus-content">
+                                            <p>Here in Hoppy Bunnies, we give our best to offer you to purchase high quality rabbit food, supplies, and rabbit themselves. It is an online store that sells Alfalfa Hay, high-quality rabbit pellets, rabbit vitamins, cages, and many other items that rabbit owners need to properly care for their pets. <br><br> Two owners started Hoppy Bunnies, and in 2021, when they brought home their first two rabbits, they became officially rabbit lovers. They have adored and owned eleven rabbits ever since. Because they have owned rabbits for such a long time, they understand the difficulty that the majority of rabbit owners in the Philippines face in locating the appropriate products for their pets. They primarily purchased hay, pellets, and other products from local online shops for a very long time because availability was a major issue. They finally made the decision to open their own rabbit shop, which they dubbed Hoppy Bunnies, after realizing that they needed to take action. <br><br> Hoppy Bunnies aims to create a community where rabbit owners can share their experiences, acquire appropriate knowledge, and, most importantly, collaborate to improve the lives of rabbits in the country. This is in addition to providing rabbit owners with the necessary products. A significant objective, yes? However, with the assistance of other rabbit owners and enthusiasts like you, it is possible.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-                        <script>
-                            function scrollToStart() {
-                                const parent = document.getElementById('mobilefoodcarousel');
-                                parent.scrollTo({
-                                    left: 0,
-                                    behavior: 'smooth'
-                                });
+                        
+                    </div>
+                    
+                    <script>
+                        
+                        function scrollToElement($snap) {
+                            const container = document.querySelector('.websitebody');
+                            const snapPoint = document.querySelector($snap);
+                            const y = snapPoint.offsetTop - container.offsetTop;
+                            container.scroll({ top: y, behavior: 'smooth' });
+                        }
+                        
+                        const websitebody = document.querySelector('.websitebody');
+                        
+                        
+                        websitebody.addEventListener('scroll', function() {
+                            var productblock = document.querySelector('#productblock');
+                            var element = document.querySelector('.backToTop');
+                            var position = productblock.getBoundingClientRect();
+                            if (position.bottom <= 10) {
+                                element.classList.add('visible');
+                            } else {
+                                element.classList.remove('visible');
                             }
-
-                            function scrollToEnd() {
-                                const parent = document.getElementById('mobilefoodcarousel');
-                                parent.scrollTo({
-                                    left: parent.scrollWidth,
-                                    behavior: 'smooth'
-                                });
-                            }
-                        </script>
-
-
-                        <div class="rightfood foodtest">
-                            <img src="assets/food2.jpg" alt="">
-                        </div>
-
-                        <script>
-                            window.onload = function() {
-                                const parent = document.getElementById('mobilefoodcarousel');
-                                const children = parent.querySelectorAll('.foodtest');
-                                const parentWidth = parent.offsetWidth;
-                                const childWidth = children[0].offsetWidth;
-                                const middleIndex = Math.floor(children.length / 2);
-                                const middleChildPosition = middleIndex * childWidth - parentWidth / 2 + childWidth / 2;
-                                parent.scrollLeft = middleChildPosition;
-                            };
-                            
-                        </script>
+                        });
                         
-                    </div>
-                </div>
-            </div>
-        </div>
+                        function debounce(func, delay) {
+                            clearTimeout(timeoutId);
+                            timeoutId = setTimeout(func, delay);
+                        }
                         
-        <div class="block-class slides" id="accblock">
-            <div class="block-inner-class" id="acc-content-cont">
-                <div class="block-title-cont-class">
-                    <div class="block-title-class">
-                        <h1>OUR ACCESSORIES</h1>
-                    </div>
-                </div>
-                <div id="acc-content">
-                    <div class="divtest">
-                        <img src="assets/cage.jpg">
-                        <div class="divtestoverlay">
-                            <p id="name">Rabbit Cage</p>
-                            <p id="desc">Hand-crafted using Rabbit matting, Galvanized Wire mesh and 3.6X200 MM of zipties</p>
-                        </div>
-                    </div>
-                    <div class="divtest">
-                        <img src="assets/dextrosepowderfront.jpg">
-                        <div class="divtestoverlaydex">
-                            <p id="name">Dextrose Powder</p>
-                            <p id="desc">Dextrose or Glucose is a carbohydrate and valuable source of energy rapidly and easily absorbed. It stimulates healthy appetite and sustains adequate water intake. It is indicated for active animals in building stamina and vigor before and after strenuous activities.</p>
-                        </div>
-                    </div>
-                    <div class="divtest">
-                        <img src="assets/BORDER-cabletie.jpg">
-                        <div class="divtestoverlay">
-                            <p id="name">Zipties</p>
-                            <p id="desc">Size: 3.6X200 MM
-                                QTY: 100 PCS
-                            </p>
-                        </div>
-                    </div>
-                    <div class="divtest">
-                        <img src="assets/syringe1.jpg">
-                        <div class="divtestoverlay">
-                            <p id="name">Syringes</p>
-                            <p id="desc">A syringe is used to take the vitamins syrup for rabbits</p>
-                        </div>
-                    </div>
-                    <div class="divtest">
-                        <img src="assets/vitaminfront.jpg">
-                        <div class="divtestoverlayvit">
-                            <p id="name">Vitamins</p>
-                            <p id="desc">Specially formulated vitamin supplement designed to provide all the essential nutrients that rabbits need to maintain optimal health. Packed with a blend of vitamins, minerals, and other vital nutrients</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
                         
-        <div class="block-class slides" id="contactblock">
-            <div class="block-inner-class">
-                <div class="block-title-cont-class">
-                    <div class="block-title-class">
-                        <h1>CONTACT & ABOUT US</h1>
-                    </div>
-                </div>
-                <div id="contacts-content-cont">
-                    
-                    <div class="contacts-content">
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                    </div>
-                    
-                </div>
-                <div class="contabt-cont">
-                    <div class="contacts-cont">
-                        
-                    </div>
-                    <div class="aboutus-cont">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-                    
-    </div>
-                    
-    <script>
-        
-        function scrollToElement($snap) {
-            const container = document.querySelector('.websitebody');
-            const snapPoint = document.querySelector($snap);
-            const y = snapPoint.offsetTop - container.offsetTop;
-            container.scroll({ top: y, behavior: 'smooth' });
-        }
-        
-        const websitebody = document.querySelector('.websitebody');
-        
-        
-        websitebody.addEventListener('scroll', function() {
-            var productblock = document.querySelector('#productblock');
-            var element = document.querySelector('.backToTop');
-            var position = productblock.getBoundingClientRect();
-            if (position.bottom <= 10) {
-                element.classList.add('visible');
-            } else {
-                element.classList.remove('visible');
-            }
-        });
-        
-        function debounce(func, delay) {
-            clearTimeout(timeoutId);
-            timeoutId = setTimeout(func, delay);
-        }
-        
-        
-    </script>
-</body>
-</html>
+                    </script>
+                </body>
+                </html>
                 
                 <!-- 
                     <div class="footer">
@@ -572,7 +571,7 @@
                             
                         </div>
                     </div> -->
-
+                    
                     <!-- <div class ="navbar">
                         <div class="container">
                             <div class="navbar-logodiv">
